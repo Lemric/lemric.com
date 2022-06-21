@@ -26,13 +26,3 @@ theme = 'hermit'
       icon_pack = "fab"
       url       = "https://github.com/lemric"
 [menu]
-
-  [[menu.main]]
-    name = "Posts"
-    url = "posts/"
-    weight = 10
-
-  [[menu.main]]
-    name = "About"
-    url = "about/"
-    weight = 20
