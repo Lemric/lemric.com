@@ -1,4 +1,4 @@
-baseURL = 'https://lemric/'
+baseURL = 'https://lemric.com/'
 languageCode = 'pl-pl'
 title = 'Lemric'
 theme = 'hermit'
