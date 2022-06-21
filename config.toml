@@ -3,9 +3,9 @@ languageCode = 'pl-pl'
 title = 'Lemric'
 theme = 'hermit'
 [author]
-  name = "Dominik Labudzinski"
+  name = "Lemric Dominik Labudzinski NIP: 5272448444"
 [params]
-  AuthorName = 'Dominik Labudzinski'
+  AuthorName = 'Lemric Dominik Labudzinski NIP: 5272448444'
   GitHubUser = 'alembic'
   SidebarRecentLimit = 5
   homeSubtitle = ''
@@ -25,4 +25,3 @@ theme = 'hermit'
       name      = "github"
       icon_pack = "fab"
       url       = "https://github.com/lemric"
-[menu]
