@@ -1,309 +1,37 @@
-<!doctype html>
-<html lang="pl">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Podstawowe meta SEO -->
-    <title>Lemric – Nadchodzi Coś Więcej | Śledź to, Jeśli Odważysz Się</title>
-    <meta name="description" content=Coś się zbliża do Twojej okolicy. Już wkrótce… Niestety nie możemy zdradzić wszystkiego od razu. Wyobraź sobie miejsce, w którym codzienne życie wszystkich wokół nabiera nowego wymiaru. To przestrzeń ukrytych możliwości, niewidocznych na pierwszy rzut oka. Nasi twórcy cicho pracują nad czymś, co wzbudzi zainteresowanie, poruszy najgłębsze pokłady ciekawości i przedefiniuje sposób, w jaki postrzegasz otoczenie. Zapisz się, aby odebrać jednorazowe zaproszenie, które pozwoli Ci zanurzyć się w tym, co nieznane. Przygotuj się na subtelne przebudzenie wrażeń, które zmienią codzienność w coś nieoczekiwanego. Wszystko, czego potrzebujesz, to… odwaga. Bądź tym, który jako pierwszy usłyszy ciche pukanie do drzwi nowych możliwości. Jeśli potrafisz wytrzymać napięcie, trzymamy dla Ciebie miejsce na liście wybranych. Świat, który znasz, zmieni barwę. Poczujesz nowe dźwięki i sens w codzienności. Twoja skrzynka e-mail stanie się bramą do tajemnicy. Odwaga i ciekawość otworzą drzwi do nieznanego….">
-    <meta name="keywords" content="tajemnica, nowe doświadczenie, Lemric, sąsiedzi, otoczenie, innowacja, zaproszenie, ciekawość, odwaga, codzienność, zmiana, społeczność, technologia">
-    <meta name="author" content="Lemric">
-    <meta name="robots" content="index, follow">
-
-    <!-- Kanoniczny URL -->
-    <link rel="canonical" href="https://lemric.com/">
-
-    <style>
-        /* ************************************************
-   ZMIENNE CSS ODPOWIADAJĄCE Flutterowemu darkColorScheme
-**************************************************/
-        /* Flutter Dark ColorScheme → wartości HEX/RGBA */
-
-        :root {
-            /* Primary */
-            --color-primary: #FFB74D;               /* AppColors.orangeLight */
-            --color-on-primary: #001F3F;             /* AppColors.navy */
-            --color-primary-container: #F57C00;      /* AppColors.orangeDark */
-            --color-on-primary-container: #FFFFFF;
-
-            /* Secondary */
-            --color-secondary: #E6C4A0;
-            --color-on-secondary: #001F3F;
-            --color-secondary-container: #4A3C2F;
-            --color-on-secondary-container: #E6C4A0;
-
-            /* Tertiary */
-            --color-tertiary: #C8E6A0;
-            --color-on-tertiary: #001F3F;
-            --color-tertiary-container: #3A4A2F;
-            --color-on-tertiary-container: #C8E6A0;
-
-            /* Error */
-            --color-error: #FF6B6B;
-            --color-on-error: #001F3F;
-            --color-error-container: #8B0000;
-            --color-on-error-container: #FFB3B3;
-
-            /* Surface */
-            --color-surface: #1A1A1F;
-            --color-on-surface: #E8E8E8;
-            --color-surface-variant: #23232A;
-            --color-on-surface-variant: #B8B8B8;
-            --color-surface-tint: #FFB74D;
-
-            /* Background */
-            --color-background: #0F0F12;
-            --color-on-background: #E8E8E8;
-
-            /* Outline */
-            --color-outline: #454545;
-            --color-outline-variant: #2A2A2A;
-
-            /* Shadow / Scrim */
-            --color-shadow: rgba(0, 0, 0, 0.5);     /* #80000000 */
-            --color-scrim: rgba(0, 0, 0, 0.5);      /* #80000000 */
-
-            /* Inverse */
-            --color-inverse-surface: #E8E8E8;
-            --color-on-inverse-surface: #001F3F;
-            --color-inverse-primary: #FFA726;       /* jasny pomarańcz */
-
-            /* CustomColors (Extension) */
-            --color-chat-bubble-mine: #4A3C2F;
-            --color-chat-bubble-other: #2F2F2F;     /* iMessageDarkGray */
-            --color-chat-bubble-system: #2A2A30;
-            --color-online-indicator: #4CAF50;      /* success */
-            --color-offline-indicator: #757575;     /* greyDark */
-            --color-card-shadow: rgba(0, 0, 0, 0.125); /* 20% czerni */
-            --color-shimmer-base: #2A2A2A;
-            --color-shimmer-highlight: #3A3A3A;
-            --color-divider: #3A3A3A;
-            --color-badge: #D32F2F;                 /* error */
-            --color-on-badge: #FFFFFF;
-        }
-
-        /* ****************
-           RESET I PODSTAWY
-        ******************/
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            background: url("https://lemric.com/background.jpg") no-repeat center center fixed;
-
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--color-background);
-            color: var(--color-on-background);
-        }
-
-        /* Główne tło i teksty w trybie dark */
-        body {
-
-            background-size: cover;
-            height: 100vh;
-            margin: 0;
-            background-color: rgba(0,0,0,0.9) !important;
-            text-align: center;
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-
-        .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            padding: 0;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            border: 0;
-        }
-
-        /* ****************
-           NAGŁÓWEK
-        ******************/
-        header {
-            background-color: var(--color-surface);
-            box-shadow: 0 2px 4px var(--color-card-shadow);
-            padding: 16px 0;
-        }
-
-        header a {
-            height: 40px;
-            vertical-align: middle;
-            color: var(--color-primary-container)
-        }
-
-        /* ****************
-           SEKCJA HERO
-        ******************/
-        .hero {
-            position: relative;
-            /* Upewnij się, że masz w folderze images/ obraz „hero-dark.jpg” dopasowany do ciemnego tła */
-            padding: 120px 16px;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 16px;
-            color: var(--color-primary-container);
-        }
-
-        .hero p {
-            font-size: 1rem;
-            max-width: 600px;
-            margin: 0 auto 12px;
-            color: var(--color-on-primary-container);
-        }
-
-        .btn-primary {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: var(--color-primary);
-            color: var(--color-on-primary);
-            border-radius: 4px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--color-primary-container);
-        }
-
-        /* ****************
-           SEKCJA ZAPISU
-        ******************/
-        .signup-section {
-            background-color: var(--color-surface-variant);
-            padding: 64px 16px;
-        }
-
-        .signup-section h2 {
-            font-size: 2rem;
-            margin-bottom: 16px;
-            color: var(--color-on-surface-variant);
-        }
-
-        .signup-section p {
-            font-size: 1rem;
-            color: var(--color-on-surface-variant);
-            margin-bottom: 24px;
-        }
-
-        .signup-form {
-            max-width: 400px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .signup-form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            color: var(--color-on-surface-variant);
-        }
-
-        .signup-form input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 16px;
-            border: 1px solid var(--color-outline-variant);
-            background-color: var(--color-surface);
-            border-radius: 4px;
-            font-size: 1rem;
-            color: var(--color-on-surface);
-        }
-
-        .signup-form input[type="email"]::placeholder {
-            color: var(--color-on-surface-variant);
-        }
-
-        .signup-form button {
-            width: 100%;
-            padding: 12px;
-            background-color: var(--color-secondary-container);
-            color: var(--color-on-secondary-container);
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .signup-form button:hover {
-            background-color: var(--color-secondary);
-        }
-
-        .form-message {
-            margin-top: 12px;
-            font-size: 0.9rem;
-            color: var(--color-error);
-        }
-
-        /* ****************
-           STOPKA
-        ******************/
-        footer {
-            background-color: var(--color-surface);
-            padding: 32px 16px;
-            font-size: 0.875rem;
-            color: var(--color-on-surface);
-            border-top: 1px solid var(--color-outline);
-            margin-top: 64px;
-        }
-
-        footer a {
-            color: var(--color-primary);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* ****************
-           RESPONSYWNOŚĆ
-        ******************/
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-
-    <!-- Open Graph -->
-    <meta property="og:locale" content="pl_PL">
-    <meta property="og:site_name" content="Lemric">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Lemric – Nadchodzi Coś Więcej">
-    <meta property="og:description" content="Coś się zbliża do Twojej okolicy. Już wkrótce… Niestety nie możemy zdradzić wszystkiego od razu. Wyobraź sobie miejsce, w którym codzienne życie wszystkich wokół nabiera nowego wymiaru. To przestrzeń ukrytych możliwości, niewidocznych na pierwszy rzut oka. Nasi twórcy cicho pracują nad czymś, co wzbudzi zainteresowanie, poruszy najgłębsze pokłady ciekawości i przedefiniuje sposób, w jaki postrzegasz otoczenie. Zapisz się, aby odebrać jednorazowe zaproszenie, które pozwoli Ci zanurzyć się w tym, co nieznane. Przygotuj się na subtelne przebudzenie wrażeń, które zmienią codzienność w coś nieoczekiwanego. Wszystko, czego potrzebujesz, to… odwaga. Bądź tym, który jako pierwszy usłyszy ciche pukanie do drzwi nowych możliwości. Jeśli potrafisz wytrzymać napięcie, trzymamy dla Ciebie miejsce na liście wybranych. Świat, który znasz, zmieni barwę. Poczujesz nowe dźwięki i sens w codzienności. Twoja skrzynka e-mail stanie się bramą do tajemnicy. Odwaga i ciekawość otworzą drzwi do nieznanego….">
-    <meta property="og:url" content="https://lemric.com/">
-    <meta property="og:image" content="https://lemric.com/images/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lemric – Nadchodzi Coś Więcej">
-    <meta name="twitter:description" content="Coś się zbliża do Twojej okolicy. Już wkrótce… Niestety nie możemy zdradzić wszystkiego od razu. Wyobraź sobie miejsce, w którym codzienne życie wszystkich wokół nabiera nowego wymiaru. To przestrzeń ukrytych możliwości, niewidocznych na pierwszy rzut oka. Nasi twórcy cicho pracują nad czymś, co wzbudzi zainteresowanie, poruszy najgłębsze pokłady ciekawości i przedefiniuje sposób, w jaki postrzegasz otoczenie. Zapisz się, aby odebrać jednorazowe zaproszenie, które pozwoli Ci zanurzyć się w tym, co nieznane. Przygotuj się na subtelne przebudzenie wrażeń, które zmienią codzienność w coś nieoczekiwanego. Wszystko, czego potrzebujesz, to… odwaga. Bądź tym, który jako pierwszy usłyszy ciche pukanie do drzwi nowych możliwości. Jeśli potrafisz wytrzymać napięcie, trzymamy dla Ciebie miejsce na liście wybranych. Świat, który znasz, zmieni barwę. Poczujesz nowe dźwięki i sens w codzienności. Twoja skrzynka e-mail stanie się bramą do tajemnicy. Odwaga i ciekawość otworzą drzwi do nieznanego….">
-    <meta name="twitter:image" content="https://lemric.com/images/og-image.jpg">
-    <meta name="twitter:site" content="@lemricpl">
+  <meta charset="UTF-8">
+  <title>Zainstaluj Lemric</title>
+  <style>
+    body {
+      background: #FF4D00;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    a {
+      color: white;
+      background: #fff;
+      color: #FF4D00;
+      padding: 15px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
-<body class="dark-theme">
-
-<section class="hero" aria-labelledby="hero-title">
-    <h1 id="hero-title">Coś się zbliża...</h1>
-    <p>Nie powiemy Ci jeszcze, co to dokładnie jest. Ale wiedz, że będzie dotyczyć Twojego otoczenia.</p>
-    <p>Przygotuj się. Kiedy? Wkrótce.</p>
-</section>
+<body>
+  <h1>Zainstaluj aplikację Lemric</h1>
+  <p>Pobierz i zainstaluj certyfikat zaufania, a następnie aplikację OTA.</p>
+  <p>
+    <a href="lemric_ca.mobileconfig">Zainstaluj certyfikat</a>
+  </p>
+  <p>
+    <a href="itms-services://?action=download-manifest&url=https://lemric.com/manifest.plist">
+      Zainstaluj aplikację
+    </a>
+  </p>
 </body>
 </html>
