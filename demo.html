@@ -1,72 +1,37 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Zainstaluj Lemric</title>
   <style>
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-      background: linear-gradient(to right, #FF4D00, #FF6D00);
+      background: #FF4D00;
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      font-family: sans-serif;
       text-align: center;
+      padding-top: 100px;
     }
-
-    .logo {
-      width: 120px;
-      height: 120px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    p {
-      max-width: 320px;
-      margin: 10px auto 20px;
-      font-size: 1em;
-      line-height: 1.4;
-    }
-
-    a.install {
-      background: white;
+    a {
+      color: white;
+      background: #fff;
       color: #FF4D00;
       padding: 15px 30px;
-      font-weight: bold;
       border-radius: 12px;
       text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    a.install:hover {
-      background: #eee;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.8em;
-      color: #ffe5d0;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>Pobierz Lemric</h1>
-  <p>Lemric.com<br />Zainstaluj bezpośrednio na iPhonie.</p>
-  
-  <a class="install" href="/lemric_ca.mobileconfig">
-    Zainstaluj cetryfikat
-  </a>
-  <a class="install" href="itms-services://?action=download-manifest&url=https://lemric.com/manifest.plist">
-    Zainstaluj aplikację
-  </a>
-  <footer>© 2025 Lemric. Sideload dostępny tylko w UE (iOS 17.4+).</footer>
+  <h1>Zainstaluj aplikację Lemric</h1>
+  <p>Pobierz i zainstaluj certyfikat zaufania, a następnie aplikację OTA.</p>
+  <p>
+    <a href="lemric_ca.mobileconfig">Zainstaluj certyfikat</a>
+  </p>
+  <p>
+    <a href="itms-services://?action=download-manifest&url=https://lemric.com/manifest.plist">
+      Zainstaluj aplikację
+    </a>
+  </p>
 </body>
 </html>
