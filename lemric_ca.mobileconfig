@@ -7,15 +7,15 @@
   <array>
     <dict>
       <key>PayloadCertificateFileName</key>
-      <string>myCA.pem</string>
+      <string>Lemric Root CA</string>
       <key>PayloadContent</key>
       <data>
         LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURvVENDQW9tZ0F3SUJBZ0lVYjBRWFpTbXp2MHVZVGY0S0wxc1BRSzBWK2Ewd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1lERUxNQWtHQTFVRUJoTUNVRXd4RkRBU0JnTlZCQWdNQzAxaGVtOTNhV1ZqYTJsbE1SRXdEd1lEVlFRSApEQWhYWVhKemVtRjNZVEVQTUEwR0ExVUVDZ3dHVEdWdGNtbGpNUmN3RlFZRFZRUUREQTVNWlcxeWFXTWdVbTl2CmRDQkRRVEFlRncweU5UQTJNVFF3T1RRM05EbGFGdzB6TlRBMk1USXdPVFEzTkRsYU1HQXhDekFKQmdOVkJBWVQKQWxCTU1SUXdFZ1lEVlFRSURBdE5ZWHB2ZDJsbFkydHBaVEVSTUE4R0ExVUVCd3dJVjJGeWMzcGhkMkV4RHpBTgpCZ05WQkFvTUJreGxiWEpwWXpFWE1CVUdBMVVFQXd3T1RHVnRjbWxqSUZKdmIzUWdRMEV3Z2dFaU1BMEdDU3FHClNJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURUWGZ3c3Nub0tWbDlOTFFxanYzcWI5R1I5NDZTNUVHRHkKY2xTOFZlMUdCbWZHOGFENUliUUJOakN2YnJqNldmdkRPNTlEWVFRMXJ3YVVhSEp4aXdjTmpDdU5IeUw3V2NhdwphdEVqK0F4dE5kZHdiR1k4ZjlFaU85ZWlFQ2psbEIzdVFFZUhyeWZmRnp0cVk1ZXhPT05tYnBHMkM1Wm1KeUwwCkd0alZHK2lQbU1KNUVVNTE4c1FsMkJLdGRzYlphakUwdVptaXNrWUZmZHNkSmRIZWhSTUpBR0ZORzhpTnFlcjAKeU5Ha3U1QnBTNUpIVXN3aWhhWVZMK29DNmlPTUhrVG9lQW00SGlDaTJxTmoyelNhT3VSZjdUL1ZuMmswSVZrcQorc28zVUdVNnFHMk1RbHlNSG9JZkhuTnRGUTdVWnUrT1dyaGorQ09CSW1vR3pKN2pQbjJ2QWdNQkFBR2pVekJSCk1CMEdBMVVkRGdRV0JCUmNFVUdlZThPYmpySnlMdnZKYTdOUUIrQnFzakFmQmdOVkhTTUVHREFXZ0JSY0VVR2UKZThPYmpySnlMdnZKYTdOUUIrQnFzakFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxR1NJYjNEUUVCQ3dVQQpBNElCQVFBK0NqVzRHUHo0MWtuSFFXZ0FWbGFXaTdpb3hiSVBSZEFua29Sb2lwU3VMU1d5bjF2bkx0c0p6Ly9QCmNiZTErRjFZM21OV1pIMGxrNGE3cnREemtZN1lkU2RGSFMvZk0zTTdoUlFIMm40Wm9VRERBNkhKc1pGU2pyTnMKV0MvUTA4QS9kbVhoODZVclpzYUNUZTl2RVhCdCsyY0JyMFNDVkRUbEI0ZXNadTczNTE2Q3JwUWV2M3ZjQzJrMwp0VGpaNWxnc2NiZktOV3kyYURxd3NDcHBLK1Y2ZDhhdEJpMWliemZWVDFyaGxhb0dZUHBzakpCT09Va0dDY3Y2Ck0zWnRQZDh4M3I4aGk0YmVtYjN5dHNuTnN6a2RxMUFLbWVWbVA0SjAvR3k5MStLTEpPbkNJRzhpNDcxNFFkYS8KTFpXMlFUZGhqdWFndEFFNGtXN2tQb09icHcvdgotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
       </data>
       <key>PayloadDescription</key>
-      <string>Zaufany certyfikat Lemric</string>
+      <string>Instaluje zaufany certyfikat Lemric</string>
       <key>PayloadDisplayName</key>
-      <string>Lemric Root CA</string>
+      <string>Lemric CA</string>
       <key>PayloadIdentifier</key>
       <string>com.lemric.ca</string>
       <key>PayloadType</key>
@@ -27,9 +27,9 @@
     </dict>
   </array>
   <key>PayloadDisplayName</key>
-  <string>Lemric Cert</string>
+  <string>Lemric Trust Profile</string>
   <key>PayloadIdentifier</key>
-  <string>com.lemric.certprofile</string>
+  <string>com.lemric.trust</string>
   <key>PayloadRemovalDisallowed</key>
   <false/>
   <key>PayloadType</key>
