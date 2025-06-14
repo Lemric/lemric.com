@@ -5,33 +5,27 @@
   <title>Zainstaluj Lemric</title>
   <style>
     body {
+      font-family: sans-serif;
       background: #FF4D00;
       color: white;
-      font-family: sans-serif;
       text-align: center;
       padding-top: 100px;
     }
     a {
-      color: white;
-      background: #fff;
-      color: #FF4D00;
+      display: inline-block;
+      margin: 12px;
       padding: 15px 30px;
       border-radius: 12px;
-      text-decoration: none;
+      background: white;
+      color: #FF4D00;
       font-weight: bold;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <h1>Zainstaluj aplikację Lemric</h1>
-  <p>Pobierz i zainstaluj certyfikat zaufania, a następnie aplikację OTA.</p>
-  <p>
-    <a href="lemric_ca.mobileconfig">Zainstaluj certyfikat</a>
-  </p>
-  <p>
-    <a href="itms-services://?action=download-manifest&url=https://lemric.com/manifest.plist">
-      Zainstaluj aplikację
-    </a>
-  </p>
+  <p><a href="lemric_ca.mobileconfig">1. Zainstaluj certyfikat Lemric</a></p>
+  <p><a href="itms-services://?action=download-manifest&url=https://lemric.com/lemric/manifest.plist">2. Zainstaluj aplikację</a></p>
 </body>
 </html>
